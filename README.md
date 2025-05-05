@@ -1,111 +1,130 @@
-# SearchPro
+
+# 🚀 SearchPro – Intelligent Search Engine App
 
 <p align="center">
   <img src="lib/img/icon.png" alt="SearchPro Logo" width="200"/>
 </p>
 
-## Overview
+## 📘 Overview
 
-SearchPro is a modern search engine application built with Flutter that leverages advanced algorithms and natural language processing to deliver accurate and efficient search results. The app features a sleek dark-themed UI with intuitive onboarding screens to introduce users to its powerful capabilities.
-
-## Features
-
-- **Advanced Search Algorithms**: Utilizes TF-IDF, Inverted Index, and Cosine Similarity for accurate search results
-- **Natural Language Processing**: Implements tokenization, lemmatization, and semantic analysis for context-aware searches
-- **Adaptive User Interface**: Seamlessly switches between dark and light modes for optimal viewing in any environment
-- **Responsive Design**: Optimized for various screen sizes and orientations
-- **Smooth Animations**: Enhanced user experience with fluid transitions and Lottie animations
-
-
+**SearchPro** is a powerful and intelligent search engine application developed using **Flutter**. It is designed to deliver lightning-fast, highly relevant results through a combination of advanced search algorithms and natural language processing (NLP) techniques. Whether you're searching through **200 documents across fields such as programming, AI, data science, cybersecurity, biotechnology, medicine, engineering, marketing, or energy**, SearchPro provides accurate and efficient results with a modern, responsive user interface.
 
 ---
 
-## 💡 Search Engine App Overview
+## 🔍 Key Features
 
-### General Description
+### 🧠 Core Search Capabilities
 
-Alright, so this app is a simple yet powerful **search engine** built using **Flutter**, designed to work smoothly and beautifully on mobile devices. It uses advanced search techniques under the hood.
+* **Multi-Algorithm Search Engine**:
 
----
+  * **TF-IDF**: Evaluates term importance in context
+  * **BM25**: Enhances result ranking beyond TF-IDF
+  * **Inverted Index**: Enables fast full-text lookups
+  * **Vector Space Model** with **Cosine Similarity**: Determines document similarity and ranks results accordingly
 
-### 🔑 Key Features
+* **Natural Language Processing**:
 
-#### 1. **Beautiful and Simple UI**:
+  * Tokenization, Lemmatization, and Stemming
+  * Named Entity Recognition (NER)
+  * Part-of-Speech Tagging
+  * Sentiment Analysis
+  * Stop Word Filtering
 
-* Clean and easy-to-use search screen
-* Supports both light and dark modes
-* Welcome/onboarding screen explaining how to use the app
+* **Advanced Query Processing**:
 
-#### 2. **Search Functionality**:
-
-* Fast and effective search
-* Results displayed in order of relevance
-* Filters for different types of search
-* Shows trending searches
-
----
-
-### 🧠 Algorithms Used
-
-The app uses **three main search algorithms**:
-
-#### 1. **Document Term Incidence**
-
-* Basic method:
-
-  * Takes the search term
-  * Scans all documents
-  * Finds documents that exactly contain the word
-  * Returns those documents
-* Example: Searching for “Egypt” returns all documents containing exactly that word.
-
-#### 2. **Inverted Index**
-
-* Faster and more efficient:
-
-  * Builds an index of all words in the documents
-  * Each word links to the list of documents it's found in
-  * Searching becomes a quick lookup in that index
-* Like a book index—no need to read the whole book to find something.
-
-#### 3. **TF-IDF with Cosine Similarity**
-
-* Most advanced method:
-
-  * Calculates how important a word is in a document (TF)
-  * Considers how rare the word is across all documents (IDF)
-  * Converts both documents and search queries into mathematical vectors
-  * Uses **Cosine Similarity** to calculate how similar each document is to the search
-  * Returns and ranks results based on similarity score
-* This gives more **accurate** and **relevant** search results.
+  * Query Expansion with synonyms
+  * Real-time Spell Correction
+  * Autocomplete Suggestions
+  * Query Intent Recognition
 
 ---
 
-### 🛠️ Text Processing Steps (Before Search)
+### 🎨 User Experience
 
-1. **Tokenization**: Splits text into separate words
-
-   * E.g., "Welcome to Egypt" → \["Welcome", "to", "Egypt"]
-2. **Stop Words Removal**: Removes common unimportant words like "to", "from", "in", etc.
-3. **Case Folding**: Converts all letters to lowercase to avoid mismatch
-4. **Stemming**: Reduces words to their root forms
-
-   * E.g., "writing", "writer", "wrote" → "write"
+* Clean, intuitive UI with animated onboarding
+* Responsive design for all screen sizes and orientations
+* Adaptive theming (Dark/Light Mode)
+* Gesture-based navigation for smooth interactions
 
 ---
 
-### 📱 How to Use the App
+### ⚙️ Technical Features
 
-1. **Open the app** → You'll see a welcome and onboarding screen
-2. **Enter a search term** in the search bar
-3. **Select the search method** from the filters below the search bar
-4. **View results** ranked by relevance
-5. **Tap on a result** to view more details
-6. **Toggle light/dark mode** from the top right button
+* **Offline Functionality**: Core search works without internet
+* **Smart Caching**: Stores frequent queries for instant responses
+* **Low Memory & Battery Use**: Optimized for performance on all devices
 
 ---
-### you can download app https://drive.google.com/file/d/1vOPlcQ8bAxit7kejCj8o4PxOR20cQ5hH/view?usp=drivesdk
 
-This app brings advanced information retrieval techniques into a **simple and user-friendly experience**. The algorithms used are similar to those found in major search engines like Google—but of course, at a smaller scale and simpler implementation.
+## 🏗️ Search Engine Architecture
 
+1. **Query Processing Layer**
 
+   * Parses and normalizes input
+   * Applies query expansion and correction
+
+2. **Indexing Layer**
+
+   * Maintains an inverted index of all documents
+   * Manages tokenization, updates, and optimization
+
+3. **Ranking Layer**
+
+   * Computes TF-IDF and BM25 scores
+   * Ranks and sorts results by relevance using vector similarity
+
+4. **Caching Layer**
+
+   * Implements LRU (Least Recently Used) caching
+   * Speeds up repeated and popular searches
+
+---
+
+## 📖 Text Preprocessing Workflow
+
+Before executing a search, the text undergoes:
+
+1. **Tokenization** – Breaking text into individual words
+2. **Stop Word Removal** – Filtering out common, low-value terms
+3. **Case Folding** – Standardizing all text to lowercase
+4. **Stemming/Lemmatization** – Reducing words to their base forms
+
+Example:
+*“Writing”, “writer”, and “wrote” → “write”*
+
+---
+
+## 📱 How to Use SearchPro
+
+1. Launch the app to view the welcome/onboarding guide
+2. Enter a search term in the input bar
+3. Choose your preferred search algorithm (e.g., TF-IDF, Inverted Index)
+4. Review results sorted by relevance
+5. Tap on a result to view document details
+6. Toggle dark/light mode as needed
+
+---
+
+## 🧪 Algorithms in Action
+
+* **Document Term Incidence**: Simple word matching
+* **Inverted Index**: Fast retrieval via word-to-document mapping
+* **TF-IDF + Cosine Similarity**: Sophisticated ranking based on word significance and document similarity
+
+---
+
+## 📥 Download the App
+
+Get the latest release here:
+👉 [Download SearchPro](https://drive.google.com/file/d/1vOPlcQ8bAxit7kejCj8o4PxOR20cQ5hH/view?usp=drivesdk)
+
+---
+
+## 🌐 Technologies Used
+
+* **Flutter** (UI Framework)
+* **Dart** (Programming Language)
+* **NLP Techniques** (Text Preprocessing, NER, Sentiment Analysis)
+* **Search Algorithms** (TF-IDF, BM25, Cosine Similarity)
+
+---
