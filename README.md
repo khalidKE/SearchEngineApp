@@ -104,6 +104,7 @@ The app uses **three main search algorithms**:
 6. **Toggle light/dark mode** from the top right button
 
 ---
+### you can download app https://drive.google.com/file/d/1vOPlcQ8bAxit7kejCj8o4PxOR20cQ5hH/view?usp=drivesdk
 
 This app brings advanced information retrieval techniques into a **simple and user-friendly experience**. The algorithms used are similar to those found in major search engines like Google—but of course, at a smaller scale and simpler implementation.
 
