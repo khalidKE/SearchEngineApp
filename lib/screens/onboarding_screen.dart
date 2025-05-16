@@ -93,7 +93,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   @override
   Widget build(BuildContext context) {
     // Using exact colors from the screenshot
-    final backgroundColor = const Color(0xFF000000); // Pure black background
+    final backgroundColor = const Color(0xFF1A1A2E); // Pure black background
     final accentColor = const Color(0xFF6C63FF); // Purple accent color
 
     return Scaffold(
@@ -115,7 +115,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                       Icon(Icons.search, color: accentColor, size: 24),
                       const SizedBox(width: 8),
                       Text(
-                        'SearchPro',
+                        'Search Engine',
                         style: GoogleFonts.poppins(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -249,7 +249,6 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                           ),
                           if (_currentPage < _totalPages - 1) ...[
                             const SizedBox(width: 8),
-                            const Icon(Icons.arrow_forward, size: 18),
                           ],
                         ],
                       ),

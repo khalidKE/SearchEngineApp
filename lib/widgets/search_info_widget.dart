@@ -10,13 +10,6 @@ class SearchInfoWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            'Search Engine',
-            style: Theme.of(
-              context,
-            ).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold),
-          ),
-          const SizedBox(height: 16),
           _buildInfoCard(context, 'Preprocessing Steps', [
             'Tokenization: Breaking text into individual tokens',
             'Stop Word Removal: Filtering out common words',

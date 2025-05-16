@@ -40,6 +40,7 @@ dependencies:
   smooth_page_indicator: ^1.2.1
   google_fonts: ^6.2.1
   flutter_launcher_icons: ^0.14.3
+  flutter_typeahead: ^5.2.0
 
 flutter_launcher_icons:
   android: true

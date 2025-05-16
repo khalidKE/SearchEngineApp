@@ -8,8 +8,8 @@ class AppTheme {
   static const Color errorColor = Color(0xFFB00020);
   static const Color surfaceColor = Colors.white;
   static const Color backgroundColor = Color(0xFFF5F5F5);
-  static const Color darkBackgroundColor = Color(0xFF121212);
-  static const Color darkSurfaceColor = Color(0xFF1E1E1E);
+  static const Color darkBackgroundColor = Color(0xFF1A1A2E);
+  static const Color darkSurfaceColor = Color(0xFF1A1A2E);
 
   // Light Theme
   static final ThemeData lightTheme = ThemeData(
@@ -32,9 +32,7 @@ class AppTheme {
         foregroundColor: Colors.white,
         backgroundColor: primaryColor,
         elevation: 0,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       ),
     ),
@@ -57,9 +55,7 @@ class AppTheme {
     ),
     cardTheme: CardTheme(
       elevation: 2,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(16),
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
     ),
   );
 
@@ -83,9 +79,7 @@ class AppTheme {
         foregroundColor: Colors.white,
         backgroundColor: primaryColor,
         elevation: 0,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       ),
     ),
@@ -109,9 +103,7 @@ class AppTheme {
     cardTheme: CardTheme(
       elevation: 2,
       color: darkSurfaceColor,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(16),
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
     ),
   );
 }

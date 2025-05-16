@@ -57,7 +57,7 @@ class _IntroScreenState extends State<IntroScreen>
     // Responsive padding and font scaling
     final padding =
         isSmallScreen
-            ? 16.0
+            ? 22.0
             : isTablet
             ? 32.0
             : 48.0;
@@ -119,7 +119,7 @@ class _IntroScreenState extends State<IntroScreen>
                                         ),
                                         SizedBox(height: padding),
                                         Text(
-                                          'Welcome to Search Engine',
+                                          'Welcome',
                                           style: Theme.of(
                                             context,
                                           ).textTheme.headlineMedium?.copyWith(
